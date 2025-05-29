@@ -1,14 +1,14 @@
 name: 'Check Documentation References'
 description: 'Scan docs for references to code elements and check if they exist in the codebase.'
-author: 'Your Name'
+author: 'Muhammad Mohsin Nisar'
 inputs:
   doc-path:
-    description: 'Glob pattern for documentation files'
-    required: false
+    description: 'Glob pattern for documentation files (Markdown)'
+    required: true
     default: 'docs/**/*.md'
   code-path:
     description: 'Path to the source code directory'
-    required: false
+    required: true
     default: 'src'
   fail-on-error:
     description: 'Fail the action if broken references found'
