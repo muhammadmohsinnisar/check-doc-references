@@ -1,0 +1,19 @@
+name: 'Check Documentation References'
+description: 'Scan docs for references to code elements and check if they exist in the codebase.'
+author: 'Your Name'
+inputs:
+  doc-path:
+    description: 'Glob pattern for documentation files'
+    required: false
+    default: 'docs/**/*.md'
+  code-path:
+    description: 'Path to the source code directory'
+    required: false
+    default: 'src'
+  fail-on-error:
+    description: 'Fail the action if broken references found'
+    required: false
+    default: 'false'
+runs:
+  using: 'node16'
+  main: 'src/index.js'
