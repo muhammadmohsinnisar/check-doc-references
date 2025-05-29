@@ -1,6 +1,7 @@
 # check-doc-references
 
 [![Release](https://img.shields.io/github/v/release/muhammadmohsinnisar/check-doc-references?style=flat-square)](https://github.com/muhammadmohsinnisar/check-doc-references/releases)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 A GitHub Action to **check that all inline code references in your documentation actually exist in your source code**, helping prevent broken or outdated code references in your docs.
 
