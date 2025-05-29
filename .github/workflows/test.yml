@@ -1,0 +1,15 @@
+name: Test Check Doc References Action
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run check-doc-references
+        uses: ./  # run local action
+        with:
+          doc-path: 'docs/**/*.md'
+          code-path: 'src'
+          fail-on-error: false
